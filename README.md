@@ -16,8 +16,9 @@ npx create-react-app ts-react-practice --template=typescript
 * ```React.FC```
     * ```const App: React.FC = () => { ... }```
     * 안쓰는 것이 좋은 것 같음  
-    <details>
+    * <details>
         <summary>문제점</summary>
+   
         * Greeting.tsx
             ```ts
             import React from 'react';
