@@ -4,7 +4,10 @@ import './App.css';
 import Greetings from './Greeting';
 
 const App: React.FC = () => {
-  return <Greetings name="Hello" />;
+  const onClick = (name: string) => {
+    console.log(`${name} says HELLO`);
+  }
+  return <Greetings name="mong" onClick={onClick}/>;
 }
 
 export default App;
