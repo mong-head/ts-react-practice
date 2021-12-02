@@ -6,6 +6,7 @@ import CounterState from './CounterState';
 import MyForm from './MyForm';
 import CounterReducer from './CounterReducer';
 import ReducerSample from './ReducerSample';
+import { SampleProvider } from './SampleContext';
 
 const App: React.FC = () => {
   // greeting용
@@ -23,7 +24,11 @@ const App: React.FC = () => {
   const counterStateComponent = <CounterState />;
   const myFormComponent = <MyForm onSubmit={onSubmit} />
   const counterReducerComponent = <CounterReducer />;
-  const reducerSample = <ReducerSample />; 
+  const reducerSample = (
+    <SampleProvider>
+      <ReducerSample />
+    </SampleProvider>
+  ) ;
   return reducerSample;
 }
 
