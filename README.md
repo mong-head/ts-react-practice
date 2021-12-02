@@ -15,8 +15,9 @@ npx create-react-app ts-react-practice --template=typescript
 
 * ```React.FC```
     * ```const App: React.FC = () => { ... }```
-    * 안쓰는 것이 좋은 것 같음
-    * 문제점
+    * 안쓰는 것이 좋은 것 같음  
+    <details>
+        <summary>문제점</summary>
         * Greeting.tsx
             ```ts
             import React from 'react';
@@ -37,4 +38,9 @@ npx create-react-app ts-react-practice --template=typescript
 
             export default Greetings;
             ```
-        * defaultProps로 넣었음에도 불구하고 ```<Greetings name="Hello" />```를 하게 되면 mark가 없다며 에러남
+            * defaultProps로 넣었음에도 불구하고 ```<Greetings name="Hello" />```를 하게 되면 mark가 없다며 에러남
+    </details>
+
+* Function Component
+    * props
+        * type, generic 사용해서 받음
